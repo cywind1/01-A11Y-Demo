@@ -1,2 +1,3 @@
 com\a11y\tests\AppTest.class
 com\a11y\tests\HomepageA11yTest.class
+com\a11y\tests\A11yReportManager.class

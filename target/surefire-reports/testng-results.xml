@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-05T17:11:02 CEST" name="Surefire suite" finished-at="2026-04-05T17:11:13 CEST" duration-ms="11581">
+  <suite started-at="2026-04-08T20:50:59 CEST" name="Surefire suite" finished-at="2026-04-08T20:51:10 CEST" duration-ms="10927">
     <groups>
     </groups>
-    <test started-at="2026-04-05T17:11:02 CEST" name="Surefire test" finished-at="2026-04-05T17:11:13 CEST" duration-ms="11581">
+    <test started-at="2026-04-08T20:50:59 CEST" name="Surefire test" finished-at="2026-04-08T20:51:10 CEST" duration-ms="10927">
       <class name="com.a11y.tests.HomepageA11yTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.a11y.tests.HomepageA11yTest@79efed2d]" started-at="2026-04-05T17:11:02 CEST" name="setup" finished-at="2026-04-05T17:11:03 CEST" duration-ms="1292" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.a11y.tests.HomepageA11yTest@79efed2d]" started-at="2026-04-08T20:50:59 CEST" name="setup" finished-at="2026-04-08T20:51:01 CEST" duration-ms="1238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkHomepageWCAG22AA()[pri:0, instance:com.a11y.tests.HomepageA11yTest@79efed2d]" started-at="2026-04-05T17:11:03 CEST" name="checkHomepageWCAG22AA" finished-at="2026-04-05T17:11:13 CEST" duration-ms="10115" status="FAIL">
+        <test-method signature="checkHomepageWCAG22AA()[pri:0, instance:com.a11y.tests.HomepageA11yTest@79efed2d]" started-at="2026-04-08T20:51:01 CEST" name="checkHomepageWCAG22AA" finished-at="2026-04-08T20:51:10 CEST" duration-ms="9523" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[WCAG violations found: 5 expected [0] but found [5]]]>
@@ -24,7 +24,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:1419)
 at org.testng.Assert.assertEquals(Assert.java:1383)
-at com.a11y.tests.HomepageA11yTest.checkHomepageWCAG22AA(HomepageA11yTest.java:84)
+at com.a11y.tests.HomepageA11yTest.checkHomepageWCAG22AA(HomepageA11yTest.java:73)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -62,7 +62,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkHomepageWCAG22AA -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.a11y.tests.HomepageA11yTest@79efed2d]" started-at="2026-04-05T17:11:13 CEST" name="teardown" finished-at="2026-04-05T17:11:13 CEST" duration-ms="146" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.a11y.tests.HomepageA11yTest@79efed2d]" started-at="2026-04-08T20:51:10 CEST" name="teardown" finished-at="2026-04-08T20:51:10 CEST" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
