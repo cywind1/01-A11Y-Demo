@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import java.util.Arrays;
 import java.util.List;
 
-public class HomepageA11yTest {
+public class HandToolsA11yTest {
 
     WebDriver driver;
     A11yReportManager report;
@@ -21,20 +21,20 @@ public class HomepageA11yTest {
     public void setup() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        report = new A11yReportManager();
+        report = new A11yReportManager("target/hand-tools-report.html");
     }
 
     @Test
-    public void checkHomepageWCAG22AA() throws InterruptedException {
+    public void checkHandToolsPageWCAG22AA() throws InterruptedException {
 
         report.startTest(
-            "Homepage WCAG 2.2 AA Scan",
-            "Automated accessibility scan of the Toolshop homepage"
+            "Hand Tools Page WCAG 2.2 AA Scan",
+            "Automated accessibility scan of the Hand Tools category page"
         );
 
-        driver.get("https://with-bugs.practicesoftwaretesting.com");
+        driver.get("https://with-bugs.practicesoftwaretesting.com/#/category/hand-tools");
 
-        // Update: Capture actual URL from browser automatically
+        // Update:Capture actual URL from browser automatically
         report.setEnvironment(driver.getCurrentUrl());
         report.info("Navigated to: " + driver.getCurrentUrl());
 

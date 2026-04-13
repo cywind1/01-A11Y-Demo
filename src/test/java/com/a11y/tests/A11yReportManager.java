@@ -9,15 +9,31 @@ import java.util.List;
 
 public class A11yReportManager {
 
-    private String reportPath = "target/a11y-report.html";
+    // Report file path — configurable per test
+    private String reportPath;
     private String testName;
     private String testDescription;
     private List<String[]> steps = new ArrayList<>();
     private String startTime;
 
+    // Update: Environment URL — set automatically from browser after page loads
+    private String environment = "-";
+
+    // Default constructor — saves to homepage report
     public A11yReportManager() {
+        this("target/a11y-report.html");
+    }
+
+    // Custom constructor — saves to specified path
+    public A11yReportManager(String reportPath) {
+        this.reportPath = reportPath;
         this.startTime = LocalDateTime.now()
             .format(DateTimeFormatter.ofPattern("MMM dd, yyyy HH:mm:ss"));
+    }
+
+    // Update:Called after driver.get() to capture the actual URL from browser
+    public void setEnvironment(String url) {
+        this.environment = url;
     }
 
     public void startTest(String name, String description) {
@@ -76,10 +92,10 @@ public class A11yReportManager {
             + "</style></head><body>"
             + "<h1>WCAG 2.2 AA Accessibility Report</h1>"
             + "<div class='info-box'><table>"
-            + "<tr><td>Report name</td><td>Practice Software Testing — Toolshop v5.0</td></tr>"
+            + "<tr><td>Report name</td><td>" + testName + "</td></tr>"
             + "<tr><td>Date</td><td>" + startTime + "</td></tr>"
             + "<tr><td>Tester</td><td>cywind1</td></tr>"
-            + "<tr><td>Environment</td><td>with-bugs.practicesoftwaretesting.com</td></tr>"
+            + "<tr><td>Environment</td><td>" + environment + "</td></tr>"
             + "<tr><td>WCAG Standard</td><td>2.2 Level AA</td></tr>"
             + "<tr><td>Browser</td><td>Google Chrome</td></tr>"
             + "<tr><td>Tool</td><td>Axe-core by Deque</td></tr>"
@@ -99,10 +115,9 @@ public class A11yReportManager {
             FileWriter writer = new FileWriter(reportPath);
             writer.write(html);
             writer.close();
-            System.out.println("\n✅ Report saved to: target/a11y-report.html");
+            System.out.println("\n✅ Report saved to: " + reportPath);
         } catch (IOException e) {
             System.err.println("Failed to write report: " + e.getMessage());
         }
     }
 }
-
