@@ -3,13 +3,13 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.a11y.tests.HomepageA11yTest">
+      <class name="com.a11y.tests.ContactA11yTest">
         <methods>
           <include name="setup"/>
-          <include name="checkHomepageWCAG22AA"/>
+          <include name="checkContactPageWCAG22AA"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.a11y.tests.HomepageA11yTest -->
+      </class> <!-- com.a11y.tests.ContactA11yTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

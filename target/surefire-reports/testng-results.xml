@@ -2,29 +2,29 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-10T10:15:03 CEST" name="Surefire suite" finished-at="2026-04-10T10:15:14 CEST" duration-ms="11248">
+  <suite started-at="2026-04-13T11:49:09 CEST" name="Surefire suite" finished-at="2026-04-13T11:49:23 CEST" duration-ms="13318">
     <groups>
     </groups>
-    <test started-at="2026-04-10T10:15:03 CEST" name="Surefire test" finished-at="2026-04-10T10:15:14 CEST" duration-ms="11248">
-      <class name="com.a11y.tests.HomepageA11yTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.a11y.tests.HomepageA11yTest@79efed2d]" started-at="2026-04-10T10:15:03 CEST" name="setup" finished-at="2026-04-10T10:15:04 CEST" duration-ms="1319" status="PASS">
+    <test started-at="2026-04-13T11:49:09 CEST" name="Surefire test" finished-at="2026-04-13T11:49:23 CEST" duration-ms="13318">
+      <class name="com.a11y.tests.ContactA11yTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.a11y.tests.ContactA11yTest@79efed2d]" started-at="2026-04-13T11:49:09 CEST" name="setup" finished-at="2026-04-13T11:49:13 CEST" duration-ms="3487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkHomepageWCAG22AA()[pri:0, instance:com.a11y.tests.HomepageA11yTest@79efed2d]" started-at="2026-04-10T10:15:04 CEST" name="checkHomepageWCAG22AA" finished-at="2026-04-10T10:15:14 CEST" duration-ms="9750" status="FAIL">
+        <test-method signature="checkContactPageWCAG22AA()[pri:0, instance:com.a11y.tests.ContactA11yTest@79efed2d]" started-at="2026-04-13T11:49:13 CEST" name="checkContactPageWCAG22AA" finished-at="2026-04-13T11:49:22 CEST" duration-ms="9305" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[WCAG violations found: 5 expected [0] but found [5]]]>
+              <![CDATA[WCAG violations found: 2 expected [0] but found [2]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: WCAG violations found: 5 expected [0] but found [5]
+              <![CDATA[java.lang.AssertionError: WCAG violations found: 2 expected [0] but found [2]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:1419)
 at org.testng.Assert.assertEquals(Assert.java:1383)
-at com.a11y.tests.HomepageA11yTest.checkHomepageWCAG22AA(HomepageA11yTest.java:74)
+at com.a11y.tests.ContactA11yTest.checkContactPageWCAG22AA(ContactA11yTest.java:74)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -61,12 +61,12 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkHomepageWCAG22AA -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.a11y.tests.HomepageA11yTest@79efed2d]" started-at="2026-04-10T10:15:14 CEST" name="teardown" finished-at="2026-04-10T10:15:14 CEST" duration-ms="156" status="PASS">
+        </test-method> <!-- checkContactPageWCAG22AA -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.a11y.tests.ContactA11yTest@79efed2d]" started-at="2026-04-13T11:49:22 CEST" name="teardown" finished-at="2026-04-13T11:49:23 CEST" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.a11y.tests.HomepageA11yTest -->
+      </class> <!-- com.a11y.tests.ContactA11yTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

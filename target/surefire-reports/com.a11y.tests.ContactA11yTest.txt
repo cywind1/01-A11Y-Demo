@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
-Test set: com.a11y.tests.HomepageA11yTest
+Test set: com.a11y.tests.ContactA11yTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.56 s <<< FAILURE! -- in com.a11y.tests.HomepageA11yTest
-com.a11y.tests.HomepageA11yTest.checkHomepageWCAG22AA -- Time elapsed: 9.757 s <<< FAILURE!
-java.lang.AssertionError: WCAG violations found: 5 expected [0] but found [5]
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.61 s <<< FAILURE! -- in com.a11y.tests.ContactA11yTest
+com.a11y.tests.ContactA11yTest.checkContactPageWCAG22AA -- Time elapsed: 9.312 s <<< FAILURE!
+java.lang.AssertionError: WCAG violations found: 2 expected [0] but found [2]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:1419)
 	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at com.a11y.tests.HomepageA11yTest.checkHomepageWCAG22AA(HomepageA11yTest.java:74)
+	at com.a11y.tests.ContactA11yTest.checkContactPageWCAG22AA(ContactA11yTest.java:74)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
