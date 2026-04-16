@@ -3,8 +3,6 @@
 A portfolio project demonstrating automated accessibility testing skills using
 industry-standard tools. 
 
-Built to showcase practical knowledge of WCAG 2.2 standards, Selenium WebDriver, and the Axe-core accessibility engine <br> — directly aligned with QA Engineer / Accessibility Tester roles.
-
 ---
 
 ## 🎯 Project Goal
@@ -60,9 +58,11 @@ This framework tests against the following WCAG levels simultaneously:
 │   └── test/
 │       └── java/
 │           └── com/a11y/tests/
-│               ├── HomepageA11yTest.java   ← Main accessibility test
-│               └── AppTest.java            ← Sanity check
-├── pom.xml                                 ← Maven dependencies
+│               ├── HomepageA11yTest.java    ← Main accessibility test
+│               ├── HandToolsA11yTest.java   ← Main accessibility test
+│               ├── ContactA11yTest.java     ← Main accessibility test
+│               └── AppTest.java             ← Sanity check
+├── pom.xml                                  ← Maven dependencies
 └── README.md
 ```
 ---
